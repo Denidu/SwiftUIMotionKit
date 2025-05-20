@@ -11,7 +11,9 @@ import SwiftUI
 struct SwiftUIMotionKitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView()
+                .environmentObject(MotionViewModel())
         }
     }
 }
+
